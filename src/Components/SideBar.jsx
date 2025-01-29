@@ -21,7 +21,7 @@ const SideBar = () => {
         <div>Connections</div>
         <div className='flex items-center justify-between mr-5 gap-4'>
           <span><BiCollapseVertical /></span>
-          <span className=''><MdAdd /></span>
+          <span ><MdAdd size={18} /></span>
           <span><BsThreeDots /></span>
         </div>
       </div>
