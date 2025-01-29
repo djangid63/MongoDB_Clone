@@ -4,7 +4,7 @@ import SideBar from './Components/SideBar'
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <SideBar />
     </div>
