@@ -21,7 +21,7 @@ const SideBar = () => {
   const toggleCluster = () => setIsClusterExpanded(!isClusterExpanded);
 
   return (
-    <section className='w-[20vw] h-[96vh] text-white justify-between items-start font-inter bg-secondary '>
+    <section className='w-[20vw] h-[96vh] text-white justify-between items-start font-inter bg-secondary/95 '>
       <div className='flex items-center justify-between pl-3'>
         <div className='text-xl py-2 font-bold'>Compass</div>
         <span className={`text-lg pr-6 pt-2 cursor-pointer ${isSettingsOpen ? 'text-blue-500' : ''}`}
