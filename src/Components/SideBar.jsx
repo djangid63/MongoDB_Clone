@@ -49,7 +49,7 @@ const SideBar = () => {
         <input
           type="text"
           placeholder="Search connections"
-          className="w-[82%] p-2 pl-5 bg-[#0A2A37] text-white rounded-md outline-none focus:ring-2 focus:ring-blue-600"
+          className="w-[82%] p-2 pl-5 bg-[#0A2A37] text-white rounded-md outline-none focus:ring-2 focus:ring-blue-600 border border-gray-300 "
         />
         <span className="text-white text-xl p-2"><RiFilter2Fill /></span>
       </div>
@@ -60,13 +60,13 @@ const SideBar = () => {
             {isClusterExpanded ? <IoMdArrowDropdown size={18} /> : <IoMdArrowDropright size={18} />}
           </span>
           <span className=''><TbDatabaseHeart /></span>
-          <div className='font-inter text-[13px] font-semibold mx-1'>cluster0.ygilo.mongod...</div>
+          <div className='text-xs font-inter font-semibold mx-1'>cluster0.ygilo.mongod...</div>
         </div>
-        <div className={`flex items-center justify-between ${isConnected ? 'gap-3' : 'gap-0.5'}`}>
-          {!isConnected && <button onClick={() => setIsConnected(true)} className='hidden group-hover:block py-1 px-3 bg-gray-600/40 hover:bg-gray-400/60 border text-[12px] mx-2 border-gray-400 rounded-lg'>CONNECT</button>}
-          <span className={`text-xs cursor-pointer mr-1 hidden group-hover:block ${isConnected ? 'block' : 'hidden'}`}><MdAdd size={18} /></span>
-          <span className={`text-xs cursor-pointer hidden group-hover:block ${isConnected ? 'block' : 'hidden'}`}><GoCommandPalette /></span>
-          <span className='mr-4 hidden group-hover:block text-xs cursor-pointer'><BsThreeDots /></span>
+        <div className='flex items-center justify-between gap-2'>
+          {!isConnected && <button onClick={() => setIsConnected(true)} className='hidden group-hover:block py-[0.5px] px-3 bg-gray-600/40 hover:bg-gray-400/60 border text-[12px] mx-2 border-gray-400 rounded-lg'>CONNECT</button>}
+          <span className={`cursor-pointer mr-1 hidden group-hover:block ${isConnected ? 'hidden' : 'group-hover:block'}`}><MdAdd size={18} /></span>
+          <span className={`cursor-pointer hidden ${isConnected ? 'group-hover:block' : 'hidden'}`}><GoCommandPalette /></span>
+          <span className='mr-4 group-hover:block cursor-pointer'><BsThreeDots /></span>
         </div>
       </div>
     </section>

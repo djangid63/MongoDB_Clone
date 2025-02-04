@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import SideBar from '../Components/SideBar'
-import { use } from 'react'
 
 const Welcome = () => {
   return (
